@@ -4,10 +4,11 @@ import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_row.view.*
 
-class RVAdpter (val activity:MainActivity, val list: List<Note>) : RecyclerView.Adapter<RVAdpter.ItemViewHolder>() {
+class RVAdpter(val activity:MainActivity, val list: List<Note>) : RecyclerView.Adapter<RVAdpter.ItemViewHolder>() {
     class ItemViewHolder (itemView: View): RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
